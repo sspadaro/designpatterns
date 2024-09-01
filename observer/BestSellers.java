@@ -15,7 +15,7 @@ public class BestSellers implements Subject{
         bestSellers = new ArrayList<>();
     }
     /**
-     * Adds and observer to the list of observers
+     * Adds an observer to the list of observers
      * @param observer the observer being added to the list
      */
     public void registerObserver(Observer observer){
