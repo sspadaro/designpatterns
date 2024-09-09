@@ -8,12 +8,17 @@ public class Character {
     protected ArrayList<String> lines;
 
     public Character(ArrayList<String> lines, String name){
-
+        this.lines = lines;
+        this.name = name;
     }
     public String getName(){
         return name;
     }
     public String toString(){
-        return "----- "+name+" ------\n"+lines;
+        StringBuilder result = new StringBuilder("----- " + name + " ------\n");
+        for (String line : lines) {
+            result.append(line).append("\n");
+        }
+        return result.toString();
     }
 }

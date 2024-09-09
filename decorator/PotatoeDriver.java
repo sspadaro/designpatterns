@@ -1,3 +1,5 @@
+package decorator;
+
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
