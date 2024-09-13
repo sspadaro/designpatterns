@@ -25,6 +25,7 @@ public class Easy implements State{
     }
     public void increaseDifficulty(){
         game.setState(game.getMediumState());
+        System.out.println("Level increased to: Medium");
     }
     public void decreaseDifficulty(){
         System.out.println("Study more");
