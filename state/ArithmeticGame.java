@@ -25,7 +25,7 @@ public class ArithmeticGame {
     public State getEasyState(){
 
     }
-    public State getMeduimState(){
+    public State getMediumState(){
         
     }
     public State getHardState(){
