@@ -2,7 +2,7 @@ package state;
 
 import java.util.Random;
 
-public class Hard {
+public class Hard implements State{
     private ArithmeticGame game;
 
     public Hard(ArithmeticGame game){

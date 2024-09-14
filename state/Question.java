@@ -5,7 +5,7 @@ public class Question {
     private int answer;
 
     public Question(int num1, int num2, Operation operation){
-        question = num1+ " "+operation+" "+num2+":";
+        question = num1+ " "+operation.label+" "+num2;
         if(operation.label.equals("+")){
             answer = num1 + num2;
         }else if(operation.label.equals("-")){

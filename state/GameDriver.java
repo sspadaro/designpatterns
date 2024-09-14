@@ -1,12 +1,14 @@
+package state;
+
 import java.util.Scanner;
 public class GameDriver {
     private Scanner reader;
-    private ArithemeticGame game;
+    private ArithmeticGame game;
     private static final String[] mainOptions = {"Answer a Question", "Quit"};
 
     public GameDriver() {
         reader = new Scanner(System.in);
-        game = new ArithemeticGame();
+        game = new ArithmeticGame();
     }
 
     public void play() {
