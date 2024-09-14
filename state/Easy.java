@@ -11,7 +11,7 @@ public class Easy implements State{
     }
     public int getNum(){
         Random rand = new Random();
-        int num = rand.nextInt(11);
+        int num = rand.nextInt(10) + 1;
         return num;
     }
     public Operation getOperation(){

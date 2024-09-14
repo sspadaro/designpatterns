@@ -10,7 +10,7 @@ public class Hard {
     }
     public int getNum(){
         Random rand = new Random();
-        int num = rand.nextInt(51);
+        int num = rand.nextInt(50) + 1;
         return num;
     }
     public Operation getOperation(){

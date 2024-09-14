@@ -11,7 +11,7 @@ public class Medium {
     }
     public int getNum(){
         Random rand = new Random();
-        int num = rand.nextInt(26);
+        int num = rand.nextInt(25) +1;
         return num;
     }
     public Operation getOperation(){
