@@ -14,17 +14,13 @@ public class Question {
         this.answers = new ArrayList<>(Arrays.asList(answers));
     }
     public String toString(){
-        return question+"\n"+"1. "+answers.get(0)+"\n"
+        return "\n"+question+"\n"+"1. "+answers.get(0)+"\n"
         +"2. "+answers.get(1)+"\n"
         +"3. "+answers.get(2)+"\n"
         +"4. "+answers.get(3)+"\n";
     }
     public boolean isCorrect(int userAnswer){
-        if(userAnswer == correctAnswer){
-            return true;
-        }else{
-            return false;
-        }
+        return userAnswer == correctAnswer+1;
     }
     public String getCorrectAnswer(){
         return answers.get(correctAnswer);
