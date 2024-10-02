@@ -28,8 +28,9 @@ public class Flight {
         return this.from == from && this.to == to;
     }
     public String toString(){
-        double hours = java.time.Duration.between(startTime, endTime).toHours();
-        double minutes = java.time.Duration.between(startTime, endTime).toMinutes();
+        long totalTime = java.time.Duration.between(startTime, endTime).toMinutes();
+        long hours = totalTime/60;
+        long minutes = totalTime%60;
         String stops = "";
         if(numTransfers == 0){
             stops = "Direct Flight";
