@@ -30,8 +30,6 @@ public class Airline {
      * @return a new instance of flight iterator
      */
     public FlightIterator createIterator(String fromCode, String toCode){
-        fromCode = fromCode.toUpperCase();
-        toCode = toCode.toUpperCase();
 
         try {
             Airport from = Airport.valueOf(fromCode);
